@@ -4,6 +4,6 @@ import { Card } from '../card/card.component';
 
 export const CardList = props => {
     return <div className="card-list">
-                {props.cardInfo.map( info => (<Card>{info.name}</Card>))}
+{props.cardsInfo.map( cardInfo => (<Card cardInfo={cardInfo}/>))}
           </div>;
 }
